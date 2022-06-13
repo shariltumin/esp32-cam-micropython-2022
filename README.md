@@ -11,7 +11,7 @@ This time, the firmware support version 1.18-XXX. We may reach version 2.00-XXX 
 The build process and structure have changed since version 1.11-XXX.
 
 
-This firmware is made especially for the ESP32-Camera board and was cleanly compiled with Espressif IDF version 4.4. It supports the OV2640 camera and PSRAM. 
+This firmware is made especially for the ESP32-Camera board and was cleanly compiled with Espressif IDF version 4.4. It supports the OV2640 camera and PSRAM. To reduce size, webrepl, BLE, help modules were not included in the firmware.
 
 
 I wish to reach a wider audience. So, I will try to make this as simple as possible. To join the fun, these are what you need to do:
