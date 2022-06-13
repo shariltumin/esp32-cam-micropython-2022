@@ -2,7 +2,7 @@
 # esp32-cam-micropython-2022
 
 
-![esp32-cam](IMG_20220613_231019-01.jpeg)
+![esp32-cam](IMG_20220613_231019-01.jpeg =100x)
 
 It was three years ago. I started playing with MicroPython with camera support on an ESP32-Camera board with MicroPython version 1.11-XXX.
 
