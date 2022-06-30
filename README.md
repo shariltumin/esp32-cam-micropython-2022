@@ -180,11 +180,11 @@ kill -9 34394
 
 [1]+  Killed                  ./get_foto.sh 2> /dev/null
 ```
- 6. rotate the photos if needed using *rot_foto.sh* script, try different rotate value (-90, 90)
+ 6. rotate the photos if needed using *convert* in a script *rot_foto.sh*, try different rotate value (-90, 90)
 ```bash
 #!/bin/bash
 
-for f in `ls foto0*.jpeg`
+for f in `ls foto*.jpeg`
 do
  echo "Rotate $f"
  convert $f -rotate 90 $f
