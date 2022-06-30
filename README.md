@@ -180,16 +180,26 @@ kill -9 34394
 
 [1]+  Killed                  ./get_foto.sh 2> /dev/null
 ```
- 6. from foto\*.jpeg make timelapse tmlap.mp4 using *ffmpeg*
+ 6. rotate the photos if needed using *rot_foto.sh* script, try different rotate value (-90, 90)
+```bash
+#!/bin/bash
+
+for f in `ls foto0*.jpeg`
+do
+ echo "Rotate $f"
+ convert $f -rotate 90 $f
+done
+```
+ 7. from foto\*.jpeg make timelapse tmlap.mp4 using *ffmpeg*
 ```bash
 cat foto*.jpeg | ffmpeg -f image2pipe -r 1 -vcodec mjpeg -i - -vcodec libx264 tmlap.mp4
 ```
- 7. you can use *curl* to record live video too
+ 8. you can use *curl* to record live video too
 ```bash
 curl http://10.0.0.87/live --output live.avi
 <ctrl>+c to kill curl
 ```
- 8. use *celluloid* to show the videos
+ 9. use *celluloid* to show the videos
 ```bash
 celluloid tmlap.mp4
 
