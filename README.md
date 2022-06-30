@@ -135,6 +135,66 @@ After login, you can try:
 
 Please change the IP to your server IP. For more information, please read the help page.
 
+Our *webcam* server provides us with microservices to control the camera and
+capture images. This means, on a linux PC, we can use *wget* or *curl* to request a service.
+
+It is super easy to make timelapse video on a linux PC:
+
+ 1. login
+```bash
+wget http://10.0.0.46/login/M1XDYKh3
+```
+-OR-
+```bash
+curl http://10.0.0.46/login/M1XDYKh3
+```
+ 2. get a still photo
+```bash
+wget http://10.0.0.46/foto -o foto1.jpeg
+```
+-OR-
+```bash
+curl http://10.0.0.46/foto --output foto2.jpeg
+```
+ 3. a simple loop in a bash script will take an image every 30sec
+```bash
+#!/bin/bash
+
+cnt=0
+while :
+do
+  let "cnt=cnt+1"
+  N=$( printf '%04d' $cnt )
+  curl http://10.0.0.87/foto --output foto$N.jpeg
+  sleep 30
+done
+```
+ 4. run the *get_foto.sh* script
+```bash
+/get_foto.sh 2>/dev/null &
+[1] 34394
+```
+ 5. kill it whenever you are done
+```bash
+kill -9 34394
+
+[1]+  Killed                  ./get_foto.sh 2> /dev/null
+```
+ 6. from foto\*.jpeg make timelapse tmlap.mp4 using *ffmpeg*
+```bash
+cat foto*.jpeg | ffmpeg -f image2pipe -r 1 -vcodec mjpeg -i - -vcodec libx264 tmlap.mp4
+```
+ 7. you can use *curl* to record live video too
+```bash
+curl http://10.0.0.87/live --output live.avi
+<ctrl>+c to kill curl
+```
+ 8. use *celluloid* to show the videos
+```bash
+celluloid tmlap.mp4
+
+celluloid live.avi
+```
 
 You can now live stream video from your ESP32-Camera board at your front gate.
 
