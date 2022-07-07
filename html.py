@@ -34,7 +34,7 @@ pg = {
 </head>
 <body>
   <div style="display:flex; justify-content:center; align-items:center; height:840px;">
-    <img src="%s" style="width:720px; height:540px; transform:rotate(%sdeg);"/>
+    <img src="%s" style="width:100%; height:100%; transform:rotate(%sdeg);"/>
   </div>
 </body>
 </html>
