@@ -33,8 +33,8 @@ pg = {
 <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
 </head>
 <body>
-  <div style="display:flex; justify-content:center; align-items:center; height:840px;">
-    <img src="%s" style="width:100%; height:100%; transform:rotate(%sdeg);"/>
+  <div style="display:flex;  margin-top: 15%%; justify-content:center; align-items:center; height:600px;">
+    <img src="%s" style="height:100%%; transform:rotate(%sdeg);"/>
   </div>
 </body>
 </html>
