@@ -55,6 +55,7 @@ while 1:
       f = None
       if idx>max_frames: # guard
          grab = False
+         break # breakout limit reached
    else:
       #time.sleep_ms(30) # every 30 ms
       pass # as fast as possible
