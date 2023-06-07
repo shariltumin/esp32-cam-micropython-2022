@@ -1,0 +1,1 @@
+Firmware with BLE support
