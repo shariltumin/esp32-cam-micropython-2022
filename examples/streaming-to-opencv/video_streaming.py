@@ -2,7 +2,7 @@ import cv2
 
 dropped = 0 # drop frames count
 
-vid = cv2.VideoCapture('http://192.168.4.44/live') # open webcam capture
+vid = cv2.VideoCapture('http://10.0.4.44/live') # open webcam capture
 
 while True:
     ret, frame = vid.read() # get frame-by-frame
