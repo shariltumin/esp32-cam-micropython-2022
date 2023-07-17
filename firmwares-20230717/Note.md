@@ -18,7 +18,6 @@
 | PIN_VSYNC   |  13  | Vertical synchronization output
 | PIN_HREF    |  14  | Horizontal reference output
 | PIN_PCLK    |  15  | Pixel clock output
-|-------------|-----------|------|
 | XCLK_MHZ    |  16  |  Sensor clock speed (10, 20)
 | PIXFORMAT   |  17  |  See **pixformat**
 | FRAMESIZE   |  18  |  See **framesize**
