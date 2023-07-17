@@ -23,7 +23,6 @@
 | FRAMESIZE   |  18  |  See **framesize**
 | JPEG_QUALITY|  19  |  Jpeg quality (10, 63)
 | FB_COUNT    |  20  |  1 (esp32 2MB PSRAM) or 2 (esp32s3 8MB PSRAM)
-|-------------|-----------|------|
 
 **framesize**:
 
