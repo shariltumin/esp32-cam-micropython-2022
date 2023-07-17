@@ -27,7 +27,7 @@
 **framesize**:
 
 | name        | key | pixel | note |
-|-------------|-----|-- ----|-----|
+|-------------|-----|-------|-----|
 | FRAMESIZE_96X96 | 1 | 96x96 | Square  |
 | FRAMESIZE_QQVGA | 2 | 160x120 |    |
 | FRAMESIZE_QCIF  | 3 | 176x144 |    |
