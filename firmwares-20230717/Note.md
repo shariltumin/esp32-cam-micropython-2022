@@ -46,7 +46,6 @@
 | FRAMESIZE_P_HD | 16 | 720x1280 |    |
 | FRAMESIZE_P_3MP | 17 | 864x1536 |    |
 | FRAMESIZE_QXGA | 18 | 2048x1536 |    |
-|-------------|-----|-- ----|-----|
 
 **pixformat**:
 
@@ -61,7 +60,6 @@
 | PIXFORMAT_RAW | 7 | RAW |
 | PIXFORMAT_RGB444 | 8 | 3BP2P/RGB444 |
 | PIXFORMAT_RGB555 | 9 | 3BP2P/RGB555 |
-|-------------|-----------|------|
 
 camera methods (listed alfabatically):
 
