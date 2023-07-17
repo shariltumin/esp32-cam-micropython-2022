@@ -67,47 +67,30 @@ camera methods (listed alfabatically):
 |-------------|-----------|------|
 | aecvalue    | [0, 1200] default 0 | Automatic Exposure Control   |   
 |             |                     | Bigger value longer exposure |
-|-------------|-----------|------|
 | aelevels    | [-2, 2] default 0 | Automatic Exposure Level |  
 |             |                   | Bigger value brighter image |
-|-------------|-----------|------|
 | agcgain     | [0, 30] default 30 | Automatic Gain Control |
 |             |                    | Lower value darker image, less artefact |  
-|-------------|-----------|------|
 | brightness  | [-2, 2] default 0 | Brightness |
 |             |                   | Bigger value brighter image |
-|-------------|-----------|------|
 | capture     |           | Read sensor buffer into memory |
 |             |           | The image format and size depend on pixformat and framesize settings|    
-|-------------|-----------|------|
 | capture_bmp |           | Convert sensor buffer to BMP and read into memory |
 |             |           | The size depends on framesize setting |
-|-------------|-----------|------|
 | capture_jpg |           | Convert sensor buffer to JPG and read into memory |
 |             |           | The size depends on framesize setting |
 |             |           | Convert only if pixformat is not JPEG |
-|-------------|-----------|------|
 | conf        | what, value | camera.conf(w,v) see **configuration** |
 |             |             | Configuration with camera.conf() must be done before camera.init() |
-|-------------|-----------|------|
 | contrast    | [-2, 2] default 0| Constrast, 2 highest constrast |
-|-------------|-----------|------|
 | deinit      |           | Deinitialize camera sensor. Close and disconnect image sensor from the system|
-|-------------|-----------|------|
 | flip        |           | Flip image vertically |            
-|-------------|-----------|------|
 | framesize   | [1, 18] default 10 (SVGA) | See **framesize** |
-|-------------|-----------|------|
 | init        |           | Initialize camera sensor. Open and connect image sensor to the system. The state persist across soft-reboot. Do camera.deinit() before a new camera.init() ( after change configuration for example) |
-|-------------|-----------|------|
 | mirror      |           | Flip image horizontally |    
-|-------------|-----------|------|
 | pixformat   | [1, 9] default 5 (JPEG) | See **pixformat** |    
-|-------------|-----------|------|
 | quality     | [10, 63] default 12 | JPEG quality, highest quality at 10 |
-|-------------|-----------|------|
 | saturation  | [-2, 2] default 0 | Color saturation, -2 grayscale and 2 highest color saturation.    
-|-------------|-----------|------|
 | speffect    | [0, 6] default 0 | Special effect: |
 |             |                  | 1 - negative    |
 |             |                  | 2 - black and white   | 
@@ -115,11 +98,9 @@ camera methods (listed alfabatically):
 |             |                  | 4 - greenish  |  
 |             |                  | 5 - blueish   | 
 |             |                  | 6 - retro (brownish)   | 
-|-------------|-----------|------|
 | whitebalance| [0, 4] default 0 | White balance: |
 |             |                  | 1 - sunny   | 
 |             |                  | 2 - cloudy  |  
 |             |                  | 3 - office  |  
 |             |                  | 4 - home   | 
-|-------------|-----------|------|
 
