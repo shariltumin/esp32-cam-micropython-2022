@@ -23,7 +23,8 @@
 #
 
 Setting = {
-    'pixformat':0,  # 0:JPEG, 1:Grayscale (2bytes/pixel), 2:RGB565
+    'pixformat':5,  # 1:RGB565, 2:YUV422, 3:YUV420, 4:GRAYSCALE, 5:COMPRESSED, 
+                    # 6:RGB888, 7:RAW, 8:RGB444, 9:RGB555
     'framesize':11, # 1:96x96, 2:160x120, 3:176x144, 4:240x176, 5:240x240
                     # 6:320x240, 7:400x296, 8:480x320, 9:640x480, 10:800x600
                     # 11:1024x768, 12:1280x720, 13:1280x1024, 14:1600x1200
